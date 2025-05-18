@@ -47,5 +47,5 @@ git clone https://github.com/nexckycort/oni-setup.git ~/.local/share/oni-setup
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file
-for details.
+This repository is for personal use. Feel free to use it as inspiration for your
+own dotfiles, but please customize it to suit your needs.
