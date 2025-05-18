@@ -8,7 +8,4 @@ if git config --global --get url.ssh://git@github.com/.insteadOf >/dev/null; the
 fi
 
 # Run terminal installers
-for installer in ~/.local/share/oni-setup/install/terminal/*.sh; do
-  echo "→ Sourcing: $installer"
-  source "$installer"
-done
+for installer in ~/.local/share/oni-setup/install/terminal/*.sh; do source $installer; done

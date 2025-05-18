@@ -2,7 +2,7 @@
 set -e
 
 # Give people a chance to retry running the installation
-trap 'echo "Omakub installation failed! You can retry by running: source ~/.local/share/oni-setup/install.sh"' ERR
+trap 'echo "Oni setup installation failed! You can retry by running: source ~/.local/share/oni-setup/install.sh"' ERR
 
 # Ask for app choices
 echo "Get ready to make a few choices..."
