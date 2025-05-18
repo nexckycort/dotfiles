@@ -13,17 +13,17 @@ if [ -f "$ZSHRC" ]; then
   if [[ "$overwrite_zshrc" =~ ^[Yy]$ ]]; then
     rm -f "$ZSHRC"
     echo "🗂️ Applying zsh dotfiles..."
-    stow zsh
+    stow -t "$HOME" zsh
   else
     echo "⏭️ Skipping .zshrc stow."
   fi
 else
   echo "🗂️ Applying zsh dotfiles..."
-  stow zsh
+  stow -t "$HOME" zsh
 fi
 
 # Apply other dotfiles
 echo "🗂️ Applying git dotfiles..."
-stow git
+stow -t "$HOME" git
 
 echo "✅ Dotfiles applied successfully."
