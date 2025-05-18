@@ -3,7 +3,7 @@ if ! command -v btop &>/dev/null; then
   echo "📦 Installing btop..."
   sudo apt install -y btop
 else
-  echo "✅ btop is already installed"
+  echo "✔️ btop is already installed"
 fi
 
 # Apply Omakub btop config only if not already applied
