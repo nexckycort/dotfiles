@@ -1,13 +1,6 @@
 set -e
 
-echo "🔧 Installing Zsh and Oh My Zsh..."
-
-# Install zsh if not installed
-if ! command -v zsh >/dev/null 2>&1; then
-  sudo apt install -y zsh
-else
-  echo "✔️ zsh already installed."
-fi
+echo "🔧 Installing Oh My Zsh..."
 
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
