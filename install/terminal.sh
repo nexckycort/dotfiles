@@ -1,7 +1,7 @@
 # Needed for all installers
 sudo apt update -y
 sudo apt upgrade -y
-sudo apt install -y curl git unzip zsh stow
+sudo apt install -y curl git unzip zsh
 
 git config --global --unset url."ssh://git@github.com/".insteadOf
 

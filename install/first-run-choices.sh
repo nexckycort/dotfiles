@@ -33,20 +33,5 @@ done
 export OMAKUB_FIRST_RUN_LANGUAGES=$(gum choose "${AVAILABLE_LANGUAGES[@]}" --no-limit --selected "$SELECTED_LANGUAGES" --height 10 --header "Select programming languages")
 
 AVAILABLE_DBS=("MySQL" "Redis" "PostgreSQL")
-SELECTED_DBS=()
-
-for db in "${AVAILABLE_DBS[@]}"; do
-  case $db in
-    "MySQL")
-      docker ps --format '{{.Image}}' | grep -qi mysql && SELECTED_DBS+=("$db")
-      ;;
-    "Redis")
-      docker ps --format '{{.Image}}' | grep -qi redis && SELECTED_DBS+=("$db")
-      ;;
-    "PostgreSQL")
-      docker ps --format '{{.Image}}' | grep -qi postgres && SELECTED_DBS+=("$db")
-      ;;
-  esac
-done
-
+SELECTED_DBS="PostgreSQL"
 export OMAKUB_FIRST_RUN_DBS=$(gum choose "${AVAILABLE_DBS[@]}" --no-limit --selected "$SELECTED_DBS" --height 5 --header "Select databases (runs in Docker)")
