@@ -4,7 +4,7 @@
 designed to automate the installation and setup of essential terminal and
 desktop tools, as well as the application of custom dotfiles.
 
-This setup was inspired by the excellent work of Basecamp's
+This setup is based on the excellent work of Basecamp's
 [Omakub project](https://github.com/basecamp/omakub).
 
 ---

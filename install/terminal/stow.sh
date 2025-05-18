@@ -22,8 +22,4 @@ else
   stow -t "$HOME" zsh
 fi
 
-# Apply other dotfiles
-echo "🗂️ Applying git dotfiles..."
-stow -t "$HOME" git
-
 echo "✅ Dotfiles applied successfully."
