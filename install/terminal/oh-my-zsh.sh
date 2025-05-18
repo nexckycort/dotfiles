@@ -1,7 +1,4 @@
 set -e
-
-echo "🔧 Installing Oh My Zsh..."
-
 # Install Oh My Zsh if not installed
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
   echo "💡 Installing Oh My Zsh..."
