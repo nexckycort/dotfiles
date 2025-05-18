@@ -1,5 +1,6 @@
 git config --global pull.rebase true
 git config --global init.defaultBranch main
+git config --global url."ssh://git@github.com/".insteadOf "https://github.com/"
 
 # Set identification from install inputs
 if [[ -n "${OMAKUB_USER_NAME//[[:space:]]/}" ]]; then
