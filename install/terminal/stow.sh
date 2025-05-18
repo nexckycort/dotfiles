@@ -1,15 +1,5 @@
 set -e
 
-echo "📦 Ensuring 'stow' is installed..."
-
-if ! command -v stow >/dev/null 2>&1; then
-  echo "🔧 'stow' not found. Installing..."
-  sudo apt-get update -qq
-  sudo apt-get install -y stow
-else
-  echo "✔️ 'stow' is already installed."
-fi
-
 DOTFILES_DIR="$HOME/.local/share/oni-setup"
 echo "📦 Applying dotfiles with stow from $DOTFILES_DIR..."
 
