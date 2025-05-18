@@ -1,6 +1,6 @@
 set -e
 
-DOTFILES_DIR="$HOME/.local/share/oni-setup"
+DOTFILES_DIR="$HOME/.local/share/oni-setup/configs"
 echo "📦 Applying dotfiles with stow from $DOTFILES_DIR..."
 
 cd "$DOTFILES_DIR" || { echo "❌ Failed to cd into $DOTFILES_DIR"; exit 1; }
