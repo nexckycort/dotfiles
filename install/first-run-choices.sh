@@ -30,7 +30,9 @@ for lang in "${AVAILABLE_LANGUAGES[@]}"; do
   esac
 done
 
-export OMAKUB_FIRST_RUN_LANGUAGES=$(gum choose "${AVAILABLE_LANGUAGES[@]}" --no-limit --selected "$SELECTED_LANGUAGES" --height 10 --header "Select programming languages")
+DEFAULT_SELECTED_LANGUAGES=$(IFS=, ; echo "${SELECTED_LANGUAGES[*]}")
+
+export OMAKUB_FIRST_RUN_LANGUAGES=$(gum choose "${AVAILABLE_LANGUAGES[@]}" --no-limit --selected "$DEFAULT_SELECTED_LANGUAGES" --height 10 --header "Select programming languages")
 
 AVAILABLE_DBS=("MySQL" "Redis" "PostgreSQL")
 SELECTED_DBS="PostgreSQL"

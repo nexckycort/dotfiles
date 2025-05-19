@@ -10,3 +10,7 @@ fi
 if [[ -n "${OMAKUB_USER_EMAIL//[[:space:]]/}" ]]; then
   git config --global user.email "$OMAKUB_USER_EMAIL"
 fi
+
+if ! grep -q 'eval "$(mise activate zsh)"' ~/.zshrc; then
+  echo 'eval "$(mise activate zsh)"' >> ~/.zshrc
+fi
